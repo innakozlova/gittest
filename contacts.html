@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
-
-    <title>Екатеринский парк в Царском селе</title>
-     <link type="image/png" sizes="16x16" rel="icon" href="image/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать у нас экскурсию</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="image/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -13,6 +13,85 @@
         @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
     </style>
 </head>
+
+<body>
+<!--главный контейнер-->
+<div class="container">
+    <!--шапка-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt="Pushkin style"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacts.html">Заказать у нас
+                                экскурсию</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--шапка (end)-->
+    <!--хлебные крошки-->
+    <nav aria-label="breadcrumb" class="m-1 pt-3 ps-5 ms-5 border align-items-center"
+         style='--bs-breadcrumb-divider: "→";'>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Заказать у нас экскурсию</li>
+        </ol>
+    </nav>
+    <!--хлебные крошки-->
+    <!--форма обратной связи-->
+    <br>
+    <h1>Свяжитесь с нами:</h1>
+    <br>
+    <div class="row">
+        <div class="col-10 col-centered bg-light p-3 rounded">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Ваше имя</label>
+                    <input type="text" class="form-control" id="exampleInputName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPhone" class="form-label">Телефон</label>
+                    <input type="tel" class="form-control" id="exampleInputPhone">
+                    <div id="PhoneHelp" class="form-text">Мы свяжемся с вами в течение часа, если вы оставили заявку в
+                        рабочее время с 10 до 20 мск
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <!--форма обратной связи (end)-->
+    <!--подвал-->
+    <br>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Pushkin style
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--подвал end-->
+</div>
+<!--главный контейнер (end)-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 <body>
 <!--главный контейнер-->
 <div class="container">
@@ -57,13 +136,13 @@
                  data-bs-ride="carousel" data-bs-interval="3500">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="image/slide1.jpg" class="d-block w-100" alt="Фасад дворца">
+                        <img src="image/slide1.jpg" class="d-block w-100" alt="Для детских групп">
                     </div>
                     <div class="carousel-item">
-                        <img src="image/slide2.jpg" class="d-block w-100" alt="Вид с птичьего полета">
+                        <img src="image/slide2.jpg" class="d-block w-100" alt="Для индивидуальных туристов">
                     </div>
                     <div class="carousel-item">
-                        <img src="image/slide3.jpg" class="d-block w-100" alt="Золотая Анфилада">
+                        <img src="image/slide3.jpg" class="d-block w-100" alt="Для иностранных групп">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -101,18 +180,19 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><!--вторая колонка про индивидуальных туристов-->
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><!--вторая колонка про индивидульных туристов-->
         <div class="card h-100">
             <div class="card-body">
                 <h5 class="card-title">Индивидуальным туристам и малым группам</h5>
-                <img src="image/personal.jpg" class="card-img-top rounded" alt="Ваша индивидуальная экскурсия">
-                <p class="card-text">Откройте для себя историю одного из самых красивых дворцов России, окутанную
+                <img src="image/personal.jpg" class="card-img-top rounded" alt="Ваша тематическая экскурсия">
+                <p class="card-text"> Откройте для себя историю одного из самых красивых дворцов России, окутанную
                     легендами и тайнами. Наши опытные гиды проведут вас по залам дворца, рассказывая о жизни и быте
                     императрицы Екатерины II и её окружения.
                     Вы сможете увидеть знаменитые Янтарную комнату и Камеронову галерею, а также узнать о влиянии
                     европейской культуры на архитектуру дворца. Для индивидуальных туристов есть возможность задать
                     тему и маршрут, выбрать удобное время начала экскурсии, заказать трансфер и обед. Забронируйте свой
-                    визит на нашем сайте или свяжитесь с нами по телефону.</p>
+                    визит на нашем сайте или свяжитесь с нами по телефону.
+                </p>
             </div>
 
         </div>
@@ -122,13 +202,15 @@
             <div class="card-body">
                 <h5 class="card-title">Для организованных иностранных групп</h5>
                 <img src="image/foreign.jpg" class="card-img-top rounded" alt="Дворцы российских императоров">
-                <p class="card-text">Иностранные туристы приезжают в Царское село, чтобы ознакомиться с Екатерининским
+                <p class="card-text"> Иностранные туристы приезжают в Царское село, чтобы ознакомиться с Екатерининским
                     дворцом, бывшее летней императорской резиденцией 3-х российских царствующих государынь — Екатерины
                     I, Елизаветы Петровны и Екатерины II, и Александровским дворцом — бывшей резиденцией последнего
                     российского императора Николая II и его семьи. Кроме интерьеров, интерес представляют пейзажный
                     Английский парк, парк с Китайской деревней, Белой башней и другими архитектурными сооружениями.
                     При бронировании укажите язык, на котором хотите получить экскурсионное обслуживание, и
-                    необходимость трансфера.</p>
+                    необходимость трансфера.
+
+                </p>
             </div>
         </div>
     </div>
