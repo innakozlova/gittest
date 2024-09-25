@@ -17,8 +17,11 @@ p {
    margin-top: 20px;
 }
 
-p::first-letter {
+p::first-line {
   font-size: 1.5rem;
   font-weight: bold;
-  color: brown;
+  color: light-blue;
 }
+
+
+
